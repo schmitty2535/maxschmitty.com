@@ -46,7 +46,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1i91zuBSWPtvvnxbCjt7ikqBDju" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -66,7 +66,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/droplet/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -88,7 +88,7 @@
       <updated>1601305259736</updated>
       <workItem from="1601305260807" duration="5901000" />
       <workItem from="1601340026269" duration="5499000" />
-      <workItem from="1601421883261" duration="24717000" />
+      <workItem from="1601421883261" duration="25065000" />
     </task>
     <task id="LOCAL-00001" summary="9/28/20">
       <created>1601305524006</created>
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601859122393</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="10/4/20">
+      <created>1601859478416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601859478416</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,14 +160,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601319411172" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1601859450639">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601859450639" />
+    <state x="647" y="310" key="Github.ShareDialog" timestamp="1601859678237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1601859678237" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1601421869062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601421869062" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601305532551">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601859540598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601305532551" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601859540598" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601473450404">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
