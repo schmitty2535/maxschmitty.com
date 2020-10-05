@@ -15,24 +15,11 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:updates08" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:updates08" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:13" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b618b161-a8ee-4380-9856-7dc5fc361bf4" name="Default Changelist" comment="10/4/20" />
+    <list default="true" id="b618b161-a8ee-4380-9856-7dc5fc361bf4" name="Default Changelist" comment="initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +76,7 @@
       <workItem from="1601305260807" duration="5901000" />
       <workItem from="1601340026269" duration="5499000" />
       <workItem from="1601421883261" duration="25065000" />
+      <workItem from="1601859937391" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="9/28/20">
       <created>1601305524006</created>
@@ -111,7 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601859478416</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="10/4/20">
+      <created>1601859963159</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601859963159</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initial commit">
+      <created>1601860195011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601860195011</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +135,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="9/28/20" />
     <MESSAGE value="10/4/20" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/4/20" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Deployment" timestamp="1601318882334">
@@ -160,10 +163,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601319411172" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1601859450639">
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1601860268325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601859450639" />
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601860268325" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1601859678237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -172,10 +175,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601421869062" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601859540598">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601860205460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601859540598" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601860205460" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601473450404">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
