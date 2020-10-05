@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/jpg" href="images/mlogo.jpg"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content=" user-scalable=0, initial-scale=1.0, width=320.1, maximum-scale=1" media="device-height: 960px" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maxwell Schmitt</title>
+
+    <style>
+
+        html, body              { padding: 0; margin: 0; overflow: hidden;}
+        .noSelect               { user-select: none; }
+
+        .main                   { position: absolute; top: 0; left: 0; height: 1080px; width: 1920px; background-color: whitesmoke; margin: unset; font-size: 60px; font-family: 'Montserrat', sans-serif; font-weight: 300;}
+
+        .titleBlock             { position: absolute; top: 0; left: 0; height: 50px; width: 100%; background-color: #000000; opacity: 0.3; font-weight: 2;  }
+
+        .pdf                    { position: absolute; width: 1000px; height: 2000px; left: 200px; top: 50px; }
+
+
+        .quote                  { position: absolute; top: 100px; font-weight: lighter; height: 120px; width: 930px; left: 300px; color: white; font-size: 32px; font-family: Iceland;}
+
+        .profile                { position: absolute; top: 250px; left: 100px; z-index: 100; }
+        .title                  { position: absolute; left: 10px; top: 8px; width: 300px; margin: unset; font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: 500; color: #2ba3ce;}
+        .menuButton             { position: absolute; top: 5px; right: 10px; border-radius: 10px; background-color: rgb(160, 160, 160); height: 40px; width: 36px; }
+        .burger                 { position: relative; top: 5px; left: 3px; margin-top: 4px; width: 30px; height: 5px; border-radius: 5px; background-color: #101010; }
+        .menuDropdown           { position: absolute; height: 200px; width: 150px; left: 650px; top: 50px; background-color: rgb(189,189,189); transition: 1.0s; border-bottom-left-radius: 20px; margin: unset;}
+
+
+
+        .OpenHab                { position: relative; height: 30px; width: 150px; top: 0px;  box-shadow: 0 5px 5px -6px black; }
+        .dropdownMenuLabel      { position: relative; left:10px; text-shadow: 1.25px 1.25px #4c4c4c; line-height: 30px; vertical-align: middle; font-size: 20px; font-family: 'Montserrat', sans-serif; color: #2ba3ce; }
+
+        .currentPiStats         { position: absolute; top: 85px; left: 20px; height: 150px; width: 175px; border-radius: 15px; font-size: 15px; font-family: 'Montserrat', sans-serif; background-color: #8F9C9C; margin: unset;}
+        .openhabTitle           { position: absolute; top: 5px; left: 12px; font-size: large; height: 15px; margin: unset; }
+        .disconnected           { position: absolute; top: 82px; left: 150px; }
+        .cpuTemp                { position: relative; top: 46px; left: 110px; width: 30px; font-size: small; margin: unset; }
+        .freeSpace              { position: relative; top: 61px; left: 114px; width: 30px; font-size: small; margin: unset; }
+
+        .openHabStats           { position: absolute; top: 90px; left: 40px; font-size: small; width: 80px; margin: unset; }
+
+    </style>
+</head>
+
+
+<body class="noSelect">
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<script type="module">
+    var x = 0;
+    var y = false;
+    var msg;
+    var webSocket                           = io.connect(location.host);
+    webSocket.on('connect', function(data) {
+        webSocket.emit('homeautom', JSON.stringify({type: "connect" }));
+    });
+    webSocket.on('homeautom', function(data) {
+        try {
+            msg                             = JSON.parse(data);
+
+            switch (msg.type) {
+                case 'openhabStats':
+                    var cpuTemp                 = msg.value;
+                    var connectionStatus        = msg.status;
+                    var diskUsedPercent         =msg.status;
+                    y = connectionStatus
+                    $("#connectionStatus").text(connectionStatus);
+                    console.log(y);
+                    if (y) {
+                        document.getElementById("disconnected").style.display = "none";
+                        console.log("hide");
+                    }else{
+                        document.getElementById("disconnected").style.display = "block";
+                        console.log("show");
+                    }
+                    $('#cpuTemp').text(cpuTemp);
+                    $('#freeSpace').text(diskUsedPercent);
+                    break;
+                case 'spaceOHS':
+
+
+
+                    break;
+                default:
+            }
+
+        } catch (ex) {
+            console.log(ex.message);
+        }
+    });
+</script>
+
+<div class="main">
+    <img src="images/background.jpg" width="1920px">
+    <div class="titleBlock" >
+    </div>
+    <div class="pdf">
+        <embed src="Resume.pdf" type="application/pdf" width="100%" height="600px" />
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+    //  ------------------------------------------------------------------------------------------------------------------------------------
+    //  --                                          ADD YOUR JAVASCRIPT CODE IN THIS SECTION                                            --
+    //  ------------------------------------------------------------------------------------------------------------------------------------
+    $('#inputsOn').on('touchup click', function(evt) {
+
+        webSocket.emit('isoiom17427', JSON.stringify({ type: 'on', value: 'on'}));
+
+    })
+
+
+
+</script>
+</body>
+</html>

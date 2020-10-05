@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="72b90494-b7b7-4cbd-a712-ab84f573a3f6" name="Droplet">
+        <fileTransfer rootFolder="/home" accessType="SFTP" host="167.172.135.64" port="22" sshConfigId="b78c61db-21a2-4f43-b9c4-7610142aa113" sshConfig="root@167.172.135.64:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
