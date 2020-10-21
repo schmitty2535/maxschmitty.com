@@ -126,8 +126,8 @@
 // Websocket connection handling
 //
     app.get('/', function(request, response) {
-    //	console.log(__dirname + '/index.html');
-        response.sendFile(__dirname + '/index.html');
+    //	console.log(__dirname + '/old.html');
+        response.sendFile(__dirname + '/old.html');
     });
     app.get(/^(.+)$/, function(request, response) {
         response.sendFile(__dirname + request.params[0]);
